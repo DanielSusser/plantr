@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="myApp.js" type="text/javascript"></script>
+
+    <title> Plantr - all things plant </title>
+<style media="screen">
+body{
+    background-image: url("http://img1.sunset.timeinc.net/sites/default/files/image/2016/06/main/house-plants-decor-grouping-0213.jpg");
+
+}
+.bg{
+    /* The image used */
+    background-image: url("https://www.google.co.uk/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwjW_bbP1IzXAhWE0RQKHdFMCpoQjRwIBw&url=http%3A%2F%2Fwww.sunset.com%2Fgarden%2Fflowers-plants%2Fhouse-plants&psig=AOvVaw1AoTsenDbJjv-U0YRHvJVz&ust=1509051350269779");
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.jumbotron{
+  opacity:0.7;
+  height: 40px
+}
+label{
+  color:brown;
+  font-size: 20px;
+  font-weight:"";
+
+}
+p{
+  color:white;
+  font-size: 16px;
+  font-family: "Georgia"
+
+}
+input{
+  opacity: 0.7;
+
+}
+</style>
+  </head>
+  <body>
+
+<div class="container">
+  <div class="jumbotron jumbotron-fluid">
+
+        <div class="row">
+          <div class="col-md-4">
+          </div>
+          <div class="col-md-4">
+            <h1 class="display-3">Plantr</h1>
+            <H2 class="lead">Helping you to help your houseplants</h2>
+          </div>
+          <div class="col-md-4">
+          </div>
+        </div>
+    </div>
+
+
+  <div class="row">
+    <div class="col-md-4">
+
+    </div>
+    <div class="col-md-4">
+      <div class="" id="explanation" style="">
+        <p>Tell us which plants you have and a bit of information about them.</p>
+        <p>
+        We'll remind you when to water and fertilise them, as well as other top tips to keep your houseplants looking fabulous.
+        </p>
+        <button id="explanationSubmit" class="btn btn-default" type="button" name="button">Ready to go!</button>
+      </div>
+      <div id="inputForm">
+      <form id="form">
+        <div class="form-group">
+          <label class="form-check-label" for="plantName">Plant name: </label>
+          <input class="form-control" id="plantName" type="text" name="plantName">
+        </div>
+        <div class="form-group">
+          <label class="form-check-label" for="plantType">What type of plant is it?</label>
+          <input class="form-control" id="plantType" type="text" name="plantType">
+        </div>
+        <div class="form-group">
+          <label class="form-check-label" for="wateringFrequency">Frequency of watering</label>
+          <input class="form-control" id="wateringFrequency" type="number" name="wateringFrequency">
+        </div>
+        <div class="form-group">
+          <label class="form-check-label" for="fertilisingFrequency">Frequency of fertilising</label>
+          <input class="form-control" id="fertiliserFrequency" type="number" name="fertilisingFrequency">
+        </div>
+        <div class="form-group">
+          <input type="button" id="submitButton" class="btn btn-default" value="submit">
+        </div>
+      </form>
+      </div>
+    </div>
+    <div class="col-md-4">
+    </div>
+    </div>
+  </div>
+
+
+</body>
+</html>
