@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 $(document).ready(function(){
 //array with all registered plants
 var plants = [];
@@ -28,9 +28,9 @@ $('#fertiliserFrequency').val("");
 console.log(plants)
   });
 
-})
-=======
-$(document).ready(function(){
+
+
+
 //array with all registered plants
 var plants = [];
 //constructs a new plant with the right properties
@@ -56,8 +56,10 @@ $('#plantType').val("");
 $('#wateringFrequency').val("");
 $('#fertiliserFrequency').val("");
 //print out the names of all active plants
-console.log(plants)
+for(var i=0;i<plants.length;i++){
+  $('#results').append("<br><p>"+plants[i].name+"</p>");
+}
   });
-
 })
->>>>>>> be6f89cbdcdb22e6ac7ad714cd71bcd8ed7afdf3
+
+//>>>>>>> be6f89cbdcdb22e6ac7ad714cd71bcd8ed7afdf3
