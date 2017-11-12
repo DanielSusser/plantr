@@ -13,21 +13,13 @@ body{
     background-image: url("http://img1.sunset.timeinc.net/sites/default/files/image/2016/06/main/house-plants-decor-grouping-0213.jpg");
 
 }
-.bg{
-    /* The image used */
-    background-image: url("https://www.google.co.uk/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwjW_bbP1IzXAhWE0RQKHdFMCpoQjRwIBw&url=http%3A%2F%2Fwww.sunset.com%2Fgarden%2Fflowers-plants%2Fhouse-plants&psig=AOvVaw1AoTsenDbJjv-U0YRHvJVz&ust=1509051350269779");
 
-    /* Full height */
-    height: 100%;
-
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.navbar{
+  background-color: #5F472F;
+  opacity:0.8
 }
-.jumbotron{
-  opacity:0.7;
-  height: 40px
+h2{
+  color:black
 }
 label{
   color:brown;
@@ -43,41 +35,22 @@ p{
 }
 input{
   opacity: 0.7;
-
 }
 </style>
   </head>
   <body>
 
-<div class="container">
-  <div class="jumbotron jumbotron-fluid">
 
-        <div class="row">
-          <div class="col-md-4">
-          </div>
-          <div class="col-md-4">
-            <h1 class="display-3">Plantr</h1>
-            <H2 class="lead">Helping you to help your houseplants</h2>
-          </div>
-          <div class="col-md-4">
-          </div>
-        </div>
+  <nav class="navbar navbar-light bg-faded">
+    <div class="container">
+      <h2 class="display-3">Plantr</h2>
+      <h2 class="lead">Helping you to help your houseplants</h2>
     </div>
-
-
+  </nav>
+<div class="container">
   <div class="row">
     <div class="col-md-4">
-
-    </div>
-    <div class="col-md-4">
-      <div class="" id="explanation" style="">
-        <p>Tell us which plants you have and a bit of information about them.</p>
-        <p>
-        We'll remind you when to water and fertilise them, as well as other top tips to keep your houseplants looking fabulous.
-        </p>
-        <button id="explanationSubmit" class="btn btn-default" type="button" name="button">Ready to go!</button>
-      </div>
-      <div id="inputForm">
+    <div id="inputForm">
       <form id="form">
         <div class="form-group">
           <label class="form-check-label" for="plantName">Plant name: </label>
@@ -99,8 +72,8 @@ input{
           <input type="button" id="submitButton" class="btn btn-default" value="submit">
         </div>
       </form>
-      </div>
     </div>
+  </div>
     <div id="results">
 
     </div>
